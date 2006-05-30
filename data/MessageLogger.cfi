@@ -1,10 +1,14 @@
    service = MessageLogger
    {
-      untracked vstring destinations = {"cout"}
+      untracked vstring destinations = {"cout","cerr"}
       untracked PSet cout            = {
 					untracked string threshold = "INFO"
 					untracked PSet default = { untracked int32 limit = 10000000  }
 					untracked PSet FwkJob = { untracked int32 limit = 0 }
+				    }
+      untracked PSet cerr            = {
+					untracked string threshold = "WARNING"
+					untracked PSet default = { untracked int32 limit = 10000000  }
 				    }
 
       untracked vstring fwkJobReports = {"FrameworkJobReport.xml"}
