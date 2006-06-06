@@ -1,21 +1,40 @@
    service = MessageLogger
    {
-      untracked vstring destinations = {"cout","cerr"}
-      untracked PSet cout            = {
-					untracked string threshold = "INFO"
-					untracked PSet default = { untracked int32 limit = 10000000  }
-					untracked PSet FwkJob = { untracked int32 limit = 0 }
-				    }
-      untracked PSet cerr            = {
-					untracked string threshold = "WARNING"
-					untracked PSet default = { untracked int32 limit = 10000000  }
-				    }
+      untracked vstring destinations =  {
+					 "warnings"
+					,"errors"
+					,"infos"
+					,"cout"
+					,"cerr"
+					}
+
+      untracked PSet cout   =  {
+				 untracked string threshold = "INFO"
+				 untracked PSet default = { untracked int32 limit = 10000000 }
+				 untracked PSet FwkJob =  { untracked int32 limit = 0 }
+				}
+
+      untracked PSet cerr    = {
+				untracked string threshold = "WARNING"
+				untracked PSet default = { untracked int32 limit = 10000000  }
+			       }
+
+      untracked PSet errors   = { untracked bool placeHolder = true }
+
+      untracked PSet warnings = { untracked bool placeHolder = true }
+
+      untracked PSet infos    = { untracked bool placeHolder = true }
+
+      untracked PSet default  = { }
 
       untracked vstring fwkJobReports = {"FrameworkJobReport.xml"}
-      untracked vstring categories = { "FwkJob" }
+      untracked vstring categories    =	{ "FwkJob" }
+
       untracked PSet FrameworkJobReport.xml = {
-                untracked PSet default = { untracked int32 limit = 0 }
-                untracked PSet FwkJob  = { untracked int32 limit = 10000000 }
+                			untracked PSet default = { untracked int32 limit = 0 }
+                			untracked PSet FwkJob  = { untracked int32 limit = 10000000 }
                                               }
+
+      untracked vstring debugModules =	{}
 
    }
