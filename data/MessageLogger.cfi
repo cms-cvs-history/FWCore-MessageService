@@ -21,11 +21,11 @@
 				untracked PSet default = { untracked int32 limit = 10000000  }
 			       }
 
-      untracked PSet errors   = { untracked bool placeHolder = true }
+      untracked PSet errors   = { untracked bool placeholder = true }
 
-      untracked PSet warnings = { untracked bool placeHolder = true }
+      untracked PSet warnings = { untracked bool placeholder = true }
 
-      untracked PSet infos    = { untracked bool placeHolder = true }
+      untracked PSet infos    = { untracked bool placeholder = true }
 
       untracked PSet default  = { }
 
