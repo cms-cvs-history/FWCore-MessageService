@@ -7,12 +7,14 @@
 					,"cout"
 					,"cerr"
 					}
+      untracked vstring categories    =	{ "FwkJob", "FwkReport" }
 
       untracked PSet cout   =  {
 				 untracked string threshold = "INFO"
-				 untracked PSet default = { untracked int32 limit = 10000000 }
+				 untracked PSet default = { untracked int32 limit = 100 }
 				 untracked PSet FwkJob =  { untracked int32 limit = 0 }
-				}
+                                 untracked PSet FwkReport = { untracked int32 reportEvery = 100 }
+			       }
 
       untracked PSet cerr    = {
 				untracked string threshold = "WARNING"
@@ -27,10 +29,9 @@
 
       untracked PSet default  = { }
 
-      untracked vstring fwkJobReports = {"FrameworkJobReport.xml"}
-      untracked vstring categories    =	{ "FwkJob" }
+      untracked vstring fwkJobReports = {"FrameworkJobReport"}
 
-      untracked PSet FrameworkJobReport.xml = {
+      untracked PSet FrameworkJobReport = {
                 			untracked PSet default = { untracked int32 limit = 0 }
                 			untracked PSet FwkJob  = { untracked int32 limit = 10000000 }
                                               }
