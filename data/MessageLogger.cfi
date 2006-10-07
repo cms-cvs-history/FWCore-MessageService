@@ -9,6 +9,8 @@
 					}
       untracked vstring categories    =	{ "FwkJob", "FwkReport" }
 
+      untracked vstring statistics = { "job_statistics" }
+
       untracked PSet cout   =  {
 				 untracked string threshold = "INFO"
 				 untracked PSet default = { untracked int32 limit = 100 }
