@@ -7,7 +7,7 @@
 					,"cout"
 					,"cerr"
 					}
-      untracked vstring categories    =	{ "FwkJob", "FwkReport" }
+      untracked vstring categories    =	{ "FwkJob", "FwkReport", "Root_NoDictionary" }
 
       untracked vstring statistics = { "job_statistics" }
 
@@ -27,7 +27,9 @@
 
       untracked PSet warnings = { untracked bool placeholder = true }
 
-      untracked PSet infos    = { untracked bool placeholder = true }
+      untracked PSet infos    = { untracked bool placeholder = true
+                                  untracked PSet Root_NoDictionary = { untracked int32 limit = 0 }
+				}
 
       untracked PSet default  = { }
 
