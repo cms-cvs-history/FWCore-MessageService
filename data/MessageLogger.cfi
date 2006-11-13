@@ -40,6 +40,12 @@
                 			untracked PSet FwkJob  = { untracked int32 limit = 10000000 }
                                               }
 
-      untracked vstring debugModules =	{}
+      untracked vstring debugModules    = { }
+
+      untracked vstring suppressDebug   = { }
+
+      untracked vstring suppressInfo    = { }
+
+      untracked vstring suppressWarning = { }
 
    }
