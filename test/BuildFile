@@ -1,0 +1,118 @@
+<use name=boost>
+<use name=FWCore/Utilities>
+
+<environment>
+
+<library file="UnitTestClient_A.cc" name=UnitTestClient_A>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_A">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_B.cc" name=UnitTestClient_B>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_B">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_C.cc" name=UnitTestClient_C>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_C">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_D.cc" name=UnitTestClient_D>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_D">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_E.cc" name=UnitTestClient_E>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_E">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_F.cc" name=UnitTestClient_F>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_F">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_G.cc" name=UnitTestClient_G>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_G">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_H.cc" name=UnitTestClient_H>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_H">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_I.cc" name=UnitTestClient_I>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_I">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_J.cc" name=UnitTestClient_J>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_J">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="UnitTestClient_K.cc" name=UnitTestClient_K>
+  <flags SEAL_PLUGIN_NAME="UnitTestClient_K">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="ProblemTestClient_t1.cc" name=ProblemTestClient_t1>
+  <flags SEAL_PLUGIN_NAME="ProblemTestClient_t1">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+<library file="MessageLoggerClient.cc" name=MessageLoggerClient>
+  <flags SEAL_PLUGIN_NAME="MessageLoggerClient">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+</environment>
+
+#<bin file=mlogRun.cpp>
+#  <use name=boost>
+#  <use name=FWCore/Framework>
+#  <use name=FWCore/MessageLogger>
+#  <lib name=boost_program_options-gcc-mt>
+#  <flags TEST_RUNNER_ARGS=" --help " >
+#</bin>
+
+<bin file=testLoggerInCmsRun.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test testLoggerInCmsRun.sh">
+</bin>
+
+<bin file=unitTestsGroup_1.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u1.sh u2.sh u6.sh">
+</bin>
+
+<bin file=unitTestsStatistics.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u3.sh u4.sh u5.sh">
+</bin>
+
+<bin file=unitTestsLimits.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u7.sh u8.sh u11.sh">
+</bin>
+
+<bin file=unitTestsGroup_2.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u9.sh u12.sh u13.sh u14.sh u15.sh">
+</bin>
+
+<bin file=unitTestsGroup_3.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u10.sh u16.sh u17.sh">
+</bin>
+
+
