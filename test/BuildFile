@@ -81,6 +81,13 @@
   <use name=FWCore/Framework>
 </library>
 
+<library file="makeSignals.cc" name=makeSignals>
+  <flags SEAL_PLUGIN_NAME="makeSignals">
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+  <lib name=Core>
+</library>
+
 </environment>
 
 #<bin file=mlogRun.cpp>
