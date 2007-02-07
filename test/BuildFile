@@ -94,6 +94,7 @@
 #  <use name=boost>
 #  <use name=FWCore/Framework>
 #  <use name=FWCore/MessageLogger>
+#  <use name=FWCore/PluginManager>
 #  <lib name=boost_program_options-gcc-mt>
 #  <flags TEST_RUNNER_ARGS=" --help " >
 #</bin>
