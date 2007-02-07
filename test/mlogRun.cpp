@@ -4,7 +4,7 @@ This is a generic main that can be used with any plugin and a
 PSet script.   See notes in EventProcessor.cpp for details about
 it.
 
-$Id: mlogRun.cpp,v 1.3 2006/05/01 16:55:50 wmtan Exp $
+$Id: mlogRun.cpp,v 1.1 2006/12/28 21:12:30 wmtan Exp $
 
 ----------------------------------------------------------------------*/
 
@@ -16,7 +16,7 @@ $Id: mlogRun.cpp,v 1.3 2006/05/01 16:55:50 wmtan Exp $
 #include <boost/program_options.hpp>
 
 #include "FWCore/Framework/interface/EventProcessor.h"
-#include "FWCore/Utilities/interface/ProblemTracker.h"
+#include "FWCore/PluginManager/interface/ProblemTracker.h"
 #include "FWCore/Utilities/interface/Exception.h"
 #include "FWCore/MessageLogger/interface/MessageLoggerSpigot.h"
 //#include "FWCore/MessageLogger/interface/MessageLogger.h"  // for test
