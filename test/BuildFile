@@ -88,6 +88,13 @@
   <lib name=Core>
 </library>
 
+#<library file="UnitTestClient_L.cc" name=UnitTestClient_L>
+#  <flags SEAL_PLUGIN_NAME="UnitTestClient_L">
+#  <use name=FWCore/MessageLogger>
+#  <use name=FWCore/Framework>
+#</library>
+
+
 </environment>
 
 #<bin file=mlogRun.cpp>
