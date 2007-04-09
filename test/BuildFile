@@ -4,92 +4,92 @@
 <environment>
 
 <library file="UnitTestClient_A.cc" name=UnitTestClient_A>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_A">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_B.cc" name=UnitTestClient_B>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_B">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_C.cc" name=UnitTestClient_C>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_C">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_D.cc" name=UnitTestClient_D>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_D">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_E.cc" name=UnitTestClient_E>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_E">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_F.cc" name=UnitTestClient_F>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_F">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_G.cc" name=UnitTestClient_G>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_G">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_H.cc" name=UnitTestClient_H>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_H">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_I.cc" name=UnitTestClient_I>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_I">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_J.cc" name=UnitTestClient_J>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_J">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="UnitTestClient_K.cc" name=UnitTestClient_K>
-  <flags SEAL_PLUGIN_NAME="UnitTestClient_K">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="ProblemTestClient_t1.cc" name=ProblemTestClient_t1>
-  <flags SEAL_PLUGIN_NAME="ProblemTestClient_t1">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="MessageLoggerClient.cc" name=MessageLoggerClient>
-  <flags SEAL_PLUGIN_NAME="MessageLoggerClient">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
 </library>
 
 <library file="makeSignals.cc" name=makeSignals>
-  <flags SEAL_PLUGIN_NAME="makeSignals">
+  <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
   <lib name=Core>
 </library>
 
 #<library file="UnitTestClient_L.cc" name=UnitTestClient_L>
-#  <flags SEAL_PLUGIN_NAME="UnitTestClient_L">
+#  <flags EDM_PLUGIN=1>
 #  <use name=FWCore/MessageLogger>
 #  <use name=FWCore/Framework>
 #</library>
