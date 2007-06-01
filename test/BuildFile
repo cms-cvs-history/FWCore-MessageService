@@ -69,6 +69,14 @@
   <use name=FWCore/Framework>
 </library>
 
+# UnitTestClient_L intentionally skipped
+
+<library file="UnitTestClient_M.cc" name=UnitTestClient_M>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
 <library file="ProblemTestClient_t1.cc" name=ProblemTestClient_t1>
   <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
@@ -128,6 +136,10 @@
 
 <bin file=unitTestsGroup_3.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u10.sh u16.sh u17.sh">
+</bin>
+
+<bin file=unitTestsGroup_4.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u18.sh">
 </bin>
 
 
