@@ -15,7 +15,7 @@
 				 untracked string threshold = "INFO"
 				 untracked PSet default = { untracked int32 limit = 100 }
 				 untracked PSet FwkJob =  { untracked int32 limit = 0 }
-                                 untracked PSet FwkReport = { untracked int32 reportEvery = 100 }
+                                 untracked PSet FwkReport = { untracked int32 reportEvery = 1 }
 				 untracked PSet FwkSummary = { untracked int32 reportEvery = 1 }
 			       }
 
