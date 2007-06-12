@@ -2,14 +2,15 @@
    {
       untracked vstring destinations =  {
 					 "warnings"
-					,"errors"
+					,"u20_errors"
 					,"infos"
 					,"cout"
 					,"cerr"
 					}
       untracked vstring categories    =	{ "FwkJob", "FwkReport", "FwkSummary", "Root_NoDictionary" }
 
-      untracked vstring statistics = { "job_statistics" }
+#      untracked vstring statistics = { "job_statistics" }
+      untracked vstring statistics = { "cout", "cerr" }
 
       untracked PSet cout   =  {
 				 untracked string threshold = "INFO"
