@@ -2,7 +2,7 @@
    {
       untracked vstring destinations =  {
 					 "warnings"
-					,"u20_errors"
+					,"errors"
 					,"infos"
 					,"cout"
 					,"cerr"
