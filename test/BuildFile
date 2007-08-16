@@ -89,6 +89,12 @@
   <use name=FWCore/Framework>
 </library>
 
+<library file="UnitTestClient_P.cc" name=UnitTestClient_P>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
 <library file="ProblemTestClient_t1.cc" name=ProblemTestClient_t1>
   <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
@@ -152,6 +158,10 @@
 
 <bin file=unitTestsGroup_4.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u18.sh u19.sh u20.sh">
+</bin>
+
+<bin file=unitTestsGroup_5.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22.sh">
 </bin>
 
 
