@@ -12,6 +12,7 @@
       untracked vstring statistics = { "cerr" }
 
       untracked PSet cerr    = {
+				 untracked bool noTimeStamps = false
 				 untracked string threshold = "INFO"
 				 untracked PSet INFO =       { untracked int32 limit = 0  }
 				 untracked PSet default =    { untracked int32 limit = 10000000  }
