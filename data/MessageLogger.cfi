@@ -4,6 +4,7 @@
 					 "warnings"
 					,"errors"
 					,"infos"
+					,"debugs"
 					,"cout"
 					,"cerr"
 					}
@@ -33,6 +34,8 @@
       untracked PSet infos    = { untracked bool placeholder = true
                                   untracked PSet Root_NoDictionary = { untracked int32 limit = 0 }
 				}
+
+      untracked PSet debugs   = { untracked bool placeholder = true }
 
       untracked PSet default  = { }
 
