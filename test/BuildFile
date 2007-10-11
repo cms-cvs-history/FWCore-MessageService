@@ -170,4 +170,14 @@
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22.sh u23.sh">
 </bin>
 
+<bin name=makeJobReport file=makeJobReport.cpp>
+ <use name=boost>
+ <use name=boost_program_options> 
+ <use name=FWCore/Framework>
+ <use name=FWCore/MessageLogger>
+ <use name=FWCore/PluginManager>
+ <use name=FWCore/ServiceRegistry>
+ <use name=FWCore/Utilities>
+
+</bin>
 
