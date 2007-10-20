@@ -117,7 +117,7 @@
   <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/Framework>
-  <lib name=Core>
+  <use name=rootcore>
 </library>
 
 #<library file="UnitTestClient_L.cc" name=UnitTestClient_L>
