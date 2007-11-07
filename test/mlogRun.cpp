@@ -4,7 +4,7 @@ This is a generic main that can be used with any plugin and a
 PSet script.   See notes in EventProcessor.cpp for details about
 it.
 
-$Id: mlogRun.cpp,v 1.2 2007/02/07 23:22:51 wmtan Exp $
+$Id: mlogRun.cpp,v 1.3 2007/05/08 03:18:40 wmtan Exp $
 
 ----------------------------------------------------------------------*/
 
@@ -21,7 +21,6 @@ $Id: mlogRun.cpp,v 1.2 2007/02/07 23:22:51 wmtan Exp $
 #include "FWCore/MessageLogger/interface/MessageLoggerSpigot.h"
 //#include "FWCore/MessageLogger/interface/MessageLogger.h"  // for test
 
-using namespace std;
 static const char* const kParameterSetOpt = "parameter-set";
 static const char* const kParameterSetCommandOpt = "parameter-set,p";
 static const char* const kHelpOpt = "help";
