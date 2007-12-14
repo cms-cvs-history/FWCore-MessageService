@@ -138,6 +138,10 @@
 #  <flags TEST_RUNNER_ARGS=" --help " >
 #</bin>
 
+<bin file=trivial_main.cpp>
+  <use name=FWCore/MessageLogger>
+</bin>
+
 <bin file=testLoggerInCmsRun.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test testLoggerInCmsRun.sh">
 </bin>
