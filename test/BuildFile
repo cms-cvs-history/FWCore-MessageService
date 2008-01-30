@@ -171,7 +171,7 @@
 </bin>
 
 <bin file=unitTestsGroup_5.cpp>
-  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22.sh u23.sh">
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22.sh u23.sh u24.sh">
 </bin>
 
 <bin name=makeJobReport file=makeJobReport.cpp>
