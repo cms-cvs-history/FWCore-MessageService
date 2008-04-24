@@ -126,6 +126,13 @@
   <use name=rootcore>
 </library>
 
+<library file="MemoryTestClient_A.cc" name=MemoryTestClient_A>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
+
 #<library file="UnitTestClient_L.cc" name=UnitTestClient_L>
 #  <flags EDM_PLUGIN=1>
 #  <use name=FWCore/MessageLogger>
