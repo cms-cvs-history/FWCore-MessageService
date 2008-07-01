@@ -1,9 +1,0 @@
-# Tell AdaptorConfig to suppress the statistics summary.  We aren't actually using
-# that service and it's summary interferes with the MessageLogger summary.
-  service = AdaptorConfig {
-    untracked
-    bool stats = false
-  }
-
-include "FWCore/Services/data/InitRootHandlers.cfi"
-
