@@ -159,9 +159,10 @@
 #  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test testLoggerInCmsRun.sh">
 #</bin>
 
-#<bin file=unitTestsGroup_1.cpp>
+<bin file=unitTestsGroup_1.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u1.sh">
 #  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u1.sh u2.sh u6.sh u21.sh">
-#</bin>
+</bin>
 
 #<bin file=unitTestsStatistics.cpp>
 #  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u3.sh u4.sh u5.sh">
