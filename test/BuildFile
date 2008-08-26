@@ -138,6 +138,12 @@
   <use name=FWCore/Framework>
 </library>
 
+<library file="UnitTestClient_SLumi.cc" name=UnitTestClient_SLumi>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
 
 #<library file="UnitTestClient_L.cc" name=UnitTestClient_L>
 #  <flags EDM_PLUGIN=1>
