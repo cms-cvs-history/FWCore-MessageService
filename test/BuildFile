@@ -167,7 +167,7 @@
 </bin>
 
 <bin file=unitTestsStatistics.cpp>
-  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u3.sh u4.sh u5.sh">
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u3.sh u4.sh u5.sh u28.sh">
 </bin>
 
 <bin file=unitTestsLimits.cpp>
@@ -192,6 +192,18 @@
 
 <bin file=unitTestsGroup_6.cpp>
   <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u23.sh u27.sh u30.sh">
+</bin>
+
+<bin file=unitTestsMultithread_1.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u1t.sh u2t.sh u5t.sh u6t.sh u8t.sh u9t.sh">
+</bin>
+
+<bin file=unitTestsMultithread_2.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u11t.sh u14t.sh u16t.sh u20t.sh">
+</bin>
+
+<bin file=unitTestsMultithread_3.cpp>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22t.sh u23t.sh u27t.sh u30t.sh">
 </bin>
 
 <bin name=makeJobReport file=makeJobReport.cpp>
