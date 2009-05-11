@@ -151,6 +151,12 @@
 #  <use name=FWCore/Framework>
 #</library>
 
+#Just an example.  No executable uses this module.
+<library file="MLexampleModule_1.cc" name=MLexampleModule_1>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
 
 </environment>
 
@@ -216,4 +222,3 @@
 # Removed because it is up at the top of the file:  <use name=FWCore/Utilities>
 
 </bin>
-
