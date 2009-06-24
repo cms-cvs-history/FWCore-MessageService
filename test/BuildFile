@@ -113,6 +113,12 @@
   <use name=FWCore/Framework>
 </library>
 
+<library file="UnitTestClient_T.cc" name=UnitTestClient_T>
+  <flags EDM_PLUGIN=1>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/Framework>
+</library>
+
 <library file="ProblemTestClient_t1.cc" name=ProblemTestClient_t1>
   <flags EDM_PLUGIN=1>
   <use name=FWCore/MessageLogger>
@@ -197,7 +203,7 @@
 </bin>
 
 <bin file=unitTestsGroup_6.cpp>
-  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u23.sh u27.sh u30.sh">
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u23.sh u27.sh u30.sh u31.sh">
 </bin>
 
 <bin file=unitTestsMultithread_1.cpp>
@@ -209,7 +215,7 @@
 </bin>
 
 <bin file=unitTestsMultithread_3.cpp>
-  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22t.sh u23t.sh u27t.sh u30t.sh">
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test u22t.sh u23t.sh u27t.sh u30t.sh u31t.sh">
 </bin>
 
 <bin name=makeJobReport file=makeJobReport.cpp>
