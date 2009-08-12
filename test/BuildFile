@@ -178,6 +178,11 @@
 
 </environment>
 
+<bin file=standAloneTest.cpp name=standAloneWithMessageLogger>
+  <use name=FWCore/MessageLogger>
+  <flags TEST_RUNNER_ARGS=" /bin/bash FWCore/MessageService/test standAlone_1.sh">
+</bin>
+
 <bin file=trivial_main.cpp>
   <use name=FWCore/MessageLogger>
 </bin>
